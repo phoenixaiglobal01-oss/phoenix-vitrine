@@ -12,31 +12,32 @@
   header h1 span { color:#ff7a1a; }
   header p { color:#b9b9c4; font-size:14px; margin-top:6px; }
   .grid { display:flex; flex-direction:column; gap:12px; max-width:520px; margin:0 auto; }
-  .card { background:#16161f; border:1px solid #262633; border-radius:14px; padding:16px; display:flex; align-items:center; gap:12px; }
+  .card { background:#16161f; border:1px solid #262633; border-radius:14px; padding:16px; display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit; -webkit-tap-highlight-color:rgba(255,122,26,.25); cursor:pointer; }
+  .card:active { background:#1e1e2a; }
   .info { flex:1; }
   .name { font-size:17px; font-weight:700; }
   .desc { font-size:13px; color:#b9b9c4; margin-top:3px; line-height:1.35; }
-  .buy { background:#ff7a1a; color:#fff; text-decoration:none; font-weight:800; font-size:14px; padding:12px 16px; border-radius:10px; white-space:nowrap; }
-  .buy:active { opacity:.85; }
+  .buy { background:#ff7a1a; color:#fff; font-weight:800; font-size:14px; padding:12px 16px; border-radius:10px; white-space:nowrap; }
+  .card:active .buy { opacity:.85; }
   footer { text-align:center; color:#77778a; font-size:12px; margin-top:26px; line-height:1.5; }
 </style>
 </head>
 <body>
 <header>
   <h1>PHOENIX <span>AI GLOBAL</span></h1>
-  <p>Our official product picks — tap BUY to go to the official page.<br>Nossas indicações oficiais — toque em COMPRAR para ir à página oficial.</p>
+  <p>Our official product picks — tap a product to go to the official page.<br>Nossas indicações oficiais — toque num produto para ir à página oficial.</p>
 </header>
 <div class="grid">
-  <div class="card"><div class="info"><div class="name">Nerve Fresh</div><div class="desc">Nerve health support formula.</div></div><a class="buy" href="https://secure.nervefresh.com/index-nf-ds#aff=phoenixaiglobal017e78">BUY →</a></div>
-  <div class="card"><div class="info"><div class="name">iGenics</div><div class="desc">Eye health and vision support formula.</div></div><a class="buy" href="https://www.digistore24.com/redir/454003/phoenixaiglobal017e78/">BUY →</a></div>
-  <div class="card"><div class="info"><div class="name">SPARTAMAX</div><div class="desc">Men's performance and vitality support.</div></div><a class="buy" href="https://getspartamax.com/#aff=phoenixaiglobal017e78">BUY →</a></div>
-  <div class="card"><div class="info"><div class="name">Thyrafemme Balance</div><div class="desc">Women's thyroid and hormone balance support.</div></div><a class="buy" href="https://getthyrafemme.cc/dtc/#aff=phoenixaiglobal017e78">BUY →</a></div>
-  <div class="card"><div class="info"><div class="name">Alpha Drive 24</div><div class="desc">Men's drive and energy support.</div></div><a class="buy" href="https://alphadrive24.com/landing-page--v2#aff=phoenixaiglobal017e78">BUY →</a></div>
-  <div class="card"><div class="info"><div class="name">Goliath XL 10</div><div class="desc">Men's size and performance support.</div></div><a class="buy" href="https://getgoliathxl10.com/read#aff=phoenixaiglobal017e78">BUY →</a></div>
-  <div class="card"><div class="info"><div class="name">Advanced Collagen Plus</div><div class="desc">Collagen support for skin, hair and joints.</div></div><a class="buy" href="https://www.advancedbionutritionals.com/DS24/Collagen/This-Simple-10-Second-Kitchen-Test/HD.htm#aff=phoenixaiglobal017e78">BUY →</a></div>
-  <div class="card"><div class="info"><div class="name">Advanced Mitochondrial Formula</div><div class="desc">Cellular energy and fatigue support.</div></div><a class="buy" href="https://www.advancedbionutritionals.com/DS24/Advanced-Mitochondrial/Too-Tired-To-Enjoy-It/HD.htm#aff=phoenixaiglobal017e78">BUY →</a></div>
-  <div class="card"><div class="info"><div class="name">Prime Perform</div><div class="desc">Men's performance support formula.</div></div><a class="buy" href="https://primeperformpro.com/welcome/#aff=phoenixaiglobal017e78">BUY →</a></div>
-  <div class="card"><div class="info"><div class="name">Vertigenics</div><div class="desc">Balance and vertigo support formula.</div></div><a class="buy" href="https://getmyvertigenics24.com/text.php#aff=phoenixaiglobal017e78">BUY →</a></div>
+  <a class="card" href="https://secure.nervefresh.com/index-nf-ds#aff=phoenixaiglobal017e78"><div class="info"><div class="name">Nerve Fresh</div><div class="desc">Nerve health support formula.</div></div><span class="buy">BUY →</span></a>
+  <a class="card" href="https://www.digistore24.com/redir/454003/phoenixaiglobal017e78/"><div class="info"><div class="name">iGenics</div><div class="desc">Eye health and vision support formula.</div></div><span class="buy">BUY →</span></a>
+  <a class="card" href="https://getspartamax.com/#aff=phoenixaiglobal017e78"><div class="info"><div class="name">SPARTAMAX</div><div class="desc">Men's performance and vitality support.</div></div><span class="buy">BUY →</span></a>
+  <a class="card" href="https://getthyrafemme.cc/dtc/#aff=phoenixaiglobal017e78"><div class="info"><div class="name">Thyrafemme Balance</div><div class="desc">Women's thyroid and hormone balance support.</div></div><span class="buy">BUY →</span></a>
+  <a class="card" href="https://alphadrive24.com/landing-page--v2#aff=phoenixaiglobal017e78"><div class="info"><div class="name">Alpha Drive 24</div><div class="desc">Men's drive and energy support.</div></div><span class="buy">BUY →</span></a>
+  <a class="card" href="https://getgoliathxl10.com/read#aff=phoenixaiglobal017e78"><div class="info"><div class="name">Goliath XL 10</div><div class="desc">Men's size and performance support.</div></div><span class="buy">BUY →</span></a>
+  <a class="card" href="https://www.advancedbionutritionals.com/DS24/Collagen/This-Simple-10-Second-Kitchen-Test/HD.htm#aff=phoenixaiglobal017e78"><div class="info"><div class="name">Advanced Collagen Plus</div><div class="desc">Collagen support for skin, hair and joints.</div></div><span class="buy">BUY →</span></a>
+  <a class="card" href="https://www.advancedbionutritionals.com/DS24/Advanced-Mitochondrial/Too-Tired-To-Enjoy-It/HD.htm#aff=phoenixaiglobal017e78"><div class="info"><div class="name">Advanced Mitochondrial Formula</div><div class="desc">Cellular energy and fatigue support.</div></div><span class="buy">BUY →</span></a>
+  <a class="card" href="https://primeperformpro.com/welcome/#aff=phoenixaiglobal017e78"><div class="info"><div class="name">Prime Perform</div><div class="desc">Men's performance support formula.</div></div><span class="buy">BUY →</span></a>
+  <a class="card" href="https://getmyvertigenics24.com/text.php#aff=phoenixaiglobal017e78"><div class="info"><div class="name">Vertigenics</div><div class="desc">Balance and vertigo support formula.</div></div><span class="buy">BUY →</span></a>
 </div>
 <footer>
   Phoenix AI Global LLC — affiliate disclosure: we may earn a commission on purchases made through these links, at no extra cost to you.
